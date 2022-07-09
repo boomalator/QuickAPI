@@ -15,12 +15,12 @@ bool FocusProcess(string procName)
     Process? thisProc = System.Diagnostics.Process.GetProcessesByName(procName).FirstOrDefault();
     if (thisProc is not null)
     {
-            Console.WriteLine(thisProc.ProcessName);
-            IntPtr hWnd = IntPtr.Zero;
-            hWnd = thisProc.MainWindowHandle;
-            ShowWindowAsync(new System.Runtime.InteropServices.HandleRef(null, hWnd), SW_RESTORE);
-            SetForegroundWindow(objProcesses[0].MainWindowHandle);
-            return true;
+        Console.WriteLine(thisProc.ProcessName);
+        IntPtr hWnd = IntPtr.Zero;
+        hWnd = thisProc.MainWindowHandle;
+        ShowWindowAsync(new System.Runtime.InteropServices.HandleRef(null, hWnd), SW_RESTORE);
+        SetForegroundWindow(hWnd);
+        return true;
     }
     else
     {
