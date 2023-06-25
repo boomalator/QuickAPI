@@ -55,7 +55,7 @@ string FocusAppResult(string someProc)
 {
     if (FocusProcess(someProc))
     {
-        return $"Called {someProc} to the foreground at {DateTime.Now:HH:MM:ss}";
+        return $"Called {someProc} to the foreground at {DateTime.Now:HH:mm:ss}";
     }
     else
     {
@@ -70,10 +70,12 @@ app.Urls.Add("http://" + localIP + ":7140");
 app.Urls.Add("https://" + localIP + ":7141");
 app.Urls.Add("https://*:7141");
 
-app.MapGet("/", () => $"Hello World! This is {localIP}, where it is {DateTime.Now:HH:MM:ss} on {DateTime.Now:m}.");
+app.MapGet("/", () => $"Hello World! This is {localIP}, where it is {DateTime.Now:HH:mm:ss} on {DateTime.Now:m}.");
 
 app.MapGet("/vlc", () => FocusAppResult("vlc"));
 app.MapGet("/vw", () => FocusAppResult("VWServer"));
+app.MapGet("/playout", () => FocusAppResult("VWServer"));
+app.MapGet("/ndi", () => FocusAppResult("Application.Network.StudioMonitor.x64"));
 
 
 app.Run();
