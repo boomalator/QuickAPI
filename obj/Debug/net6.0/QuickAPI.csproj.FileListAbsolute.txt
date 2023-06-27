@@ -16,6 +16,11 @@ D:\Gits\QuickAPI\obj\Debug\net6.0\QuickAPI.AssemblyInfo.cs
 D:\Gits\QuickAPI\obj\Debug\net6.0\QuickAPI.csproj.CoreCompileInputs.cache
 D:\Gits\QuickAPI\obj\Debug\net6.0\QuickAPI.MvcApplicationPartsAssemblyInfo.cs
 D:\Gits\QuickAPI\obj\Debug\net6.0\QuickAPI.MvcApplicationPartsAssemblyInfo.cache
+D:\Gits\QuickAPI\obj\Debug\net6.0\staticwebassets\msbuild.QuickAPI.Microsoft.AspNetCore.StaticWebAssets.props
+D:\Gits\QuickAPI\obj\Debug\net6.0\staticwebassets\msbuild.build.QuickAPI.props
+D:\Gits\QuickAPI\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.QuickAPI.props
+D:\Gits\QuickAPI\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.QuickAPI.props
+D:\Gits\QuickAPI\obj\Debug\net6.0\staticwebassets.pack.json
 D:\Gits\QuickAPI\obj\Debug\net6.0\staticwebassets.build.json
 D:\Gits\QuickAPI\obj\Debug\net6.0\staticwebassets.development.json
 D:\Gits\QuickAPI\obj\Debug\net6.0\scopedcss\bundle\QuickAPI.styles.css
